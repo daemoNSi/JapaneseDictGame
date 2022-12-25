@@ -233,4 +233,6 @@ lbl_log.grid(row=0, column=0, sticky="w", padx=20)
 list_log = Text(frame4, height=32, width=50, font=50)
 list_log.grid(row=1, column=0, sticky="sn", padx=20)
 
+backend.settings(window_2)
+
 window_2.mainloop()

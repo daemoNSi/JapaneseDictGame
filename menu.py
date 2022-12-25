@@ -174,64 +174,12 @@ btn_rand_kanji.grid(row=1, column=0, sticky=E)
 btn_curr_check = ttk.Button(frame3, text="Lookup kanji", width=12, command=check_curr)
 btn_curr_check.grid(row=2, column=0, sticky=E)
 
-
-
 lbl_log = ttk.Label(frame4, text="Updates:")
 lbl_log.grid(row=0, column=0, sticky="w", padx=20)
 
 list_log = Text(frame4, height=32, width=50, font=50)
 list_log.grid(row=1, column=0, sticky="sn", padx=20)
 
-# lbl_hist = Label(window, text="History:")
-# lbl_hist.grid(row=4, column=1, sticky="w")
-#
-# list_history = Text(window, height=12, width=35, font=50)
-# list_history.grid(row=5, column=1, sticky="sn")
-#
-# # right click on text box will create popup window
-# list_history.bind("<Button-3>", do_popup)
-# # popup menu with defined Search option
-# m = Menu(window, tearoff=0)
-# m.add_command(label="Search", command=search_tool)
-#
-# lbl_suggested = Label(window, text="Press 'Get kanji' to start", width=20, height=8, font=50)
-# lbl_suggested.grid(row=0, column=1, sticky="we")
-#
-# ent_answer = Entry(window, font=50)
-# ent_answer.grid(row=1, column=1, sticky="we")
-#
-# btn_submit = Button(window, text="Submit", command=checker)
-# btn_submit.grid(row=2, column=1, sticky="we")
-#
-# lbl_score = Label(window, text="Score", bg="green")
-# lbl_score.grid(row=0, column=2, sticky="wse")
-#
-# btn_rand_kanji = Button(window, text="Get kanji", command=random_kanji)
-# btn_rand_kanji.grid(row=1, column=2, sticky="wse")
-#
-# btn_curr_check = Button(window, text="Search: Current kanji", command=check_curr)
-# btn_curr_check.grid(row=2, column=2, sticky="wse")
-#
-# lbl_log = Label(window, text="Updates:")
-# lbl_log.grid(row=4, column=4, sticky="w")
-#
-# list_log = Text(window, height=12, width=35, font=5)
-# list_log.grid(row=5, column=4, sticky="sn")
-#
-# lbl_jlpt_from = Label(window, text="JLPT level from:")
-# lbl_jlpt_from.grid(row=6, column=1, sticky="w")
-#
-# ent_jlpt_from = Entry(window, font=50)
-# ent_jlpt_from.grid(row=6, column=1, sticky="e")
-# ent_jlpt_from.focus()
-#
-# lbl_jlpt_to = Label(window, text="to:")
-# lbl_jlpt_to.grid(row=7, column=1, sticky="w")
-#
-# ent_jlpt_to = Entry(window, font=50)
-# ent_jlpt_to.grid(row=7, column=1, sticky="e")
-#
-# btn_submit_jlpt = Button(window, text="Submit", command=jlpt_level)
-# btn_submit_jlpt.grid(row=8, column=1, sticky="nsew")
+backend.settings(window)
 
 window.mainloop()

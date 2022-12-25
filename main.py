@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 # from menu import menu1_open
-from backend import geometry_param, menu_options
+from backend import geometry_param, menu_options, settings
 # from menu2 import menu2_open
 # from menu3 import menu3_open
 
@@ -47,15 +47,7 @@ class MainWindow(tk.Tk):
         btn_pract_3.place(relx=0.5, rely=0.54, anchor='center')
         # btn_pract_3.grid(row=2, column=0, sticky="ns", padx=70)
 
-        menubar = tk.Menu(self)
-        self.config(menu=menubar, pady=100, bg='pink')
-        file_menu = tk.Menu(menubar, tearoff=False)
-        menubar.add_cascade(label='Settings', menu=file_menu)
-        sub_menu = tk.Menu(file_menu, tearoff=0)
-        sub_menu.add_command(label='960x480', command=lambda: self.geometry('960x480'))
-        sub_menu.add_command(label='1156x756', command=lambda: self.geometry('1156x756'))
-        sub_menu.add_command(label='1920x1080', command=lambda: self.geometry('1920x1080'))
-        file_menu.add_cascade(label='Screen resolution', menu=sub_menu)
+        settings(self)
 
 
 main_window = MainWindow()

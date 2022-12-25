@@ -186,64 +186,6 @@ lbl_log.grid(row=0, column=0, sticky="w", padx=20)
 list_log = Text(frame4, height=32, width=50, font=50)
 list_log.grid(row=1, column=0, sticky="sn", padx=20)
 
-# lbl_hist = ttk.Label(frame2, text="History:")
-# lbl_hist.grid(row=3, column=0, sticky="w")
-#
-# list_history = Text(frame2, height=32, width=49, font=50)
-# list_history.grid(row=4, column=0, sticky="sn")
-# list_history.bind("<Button-3>", do_popup)
-#
-# m = Menu(frame2, tearoff=0)
-# m.add_command(label="Search", command=search_tool)
-#
-# lbl_jlpt_from = ttk.Label(frame2, text="JLPT level from:")
-# lbl_jlpt_from.grid(row=5, column=0, sticky="w")
-#
-# ent_jlpt_from = ttk.Entry(frame2, font=50)
-# ent_jlpt_from.grid(row=5, column=0, sticky="e")
-# ent_jlpt_from.focus()
-#
-# lbl_jlpt_to = ttk.Label(frame2, text="to:")
-# lbl_jlpt_to.grid(row=6, column=0, sticky="w")
-#
-# ent_jlpt_to = ttk.Entry(frame2, font=50)
-# ent_jlpt_to.grid(row=6, column=0, sticky="e")
-#
-# btn_submit_jlpt = ttk.Button(frame2, text="Submit", command=jlpt_level)
-# btn_submit_jlpt.grid(row=7, column=0, sticky="nsew")
-#
-# lbl_space = ttk.Label(frame2, text="", width=15)
-# lbl_space.grid(row=3, column=2, sticky="w")
-#
-# lbl_log = ttk.Label(frame2, text="Updates:")
-# lbl_log.grid(row=3, column=3, sticky="w")
-#
-# list_log = Text(frame2, height=32, width=50, font=50)
-# list_log.grid(row=4, column=3, sticky="sn")
-#
-#
-#
-# lbl_suggested = ttk.Label(frame1, text="Press 'Get kanji' to start", width=20, font=('Arial', 100))
-# lbl_suggested.configure(anchor='center')
-# lbl_suggested.grid(row=0, column=1, sticky="we", ipady=50, ipadx=50)
-#
-# ent_answer = ttk.Entry(frame1, font=50)
-# ent_answer.grid(row=1, column=1, sticky="we")
-#
-# lbl_reply = ttk.Label(frame1, text="Answer")
-# lbl_reply.grid(row=1, column=0, sticky="nsew")
-#
-# btn_submit = ttk.Button(frame1, text="Submit", command=checker)
-# btn_submit.grid(row=2, column=1, sticky="we")
-#
-# lbl_score = ttk.Label(frame1, text="Score", width=18)
-# lbl_score.configure(anchor='center')
-# lbl_score.grid(row=0, column=2, sticky="ns")
-#
-# btn_rand_kanji = ttk.Button(frame1, text="Get kanji", command=random_kanji, width=18)
-# btn_rand_kanji.grid(row=1, column=2, sticky="n")
-#
-# btn_curr_check = ttk.Button(frame1, text="Search: Current kanji", command=check_curr, width=18)
-# btn_curr_check.grid(row=2, column=2, sticky="n")
+backend.settings(window_2)
 
 window_2.mainloop()

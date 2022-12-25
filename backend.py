@@ -3,6 +3,7 @@ from alphabet_detector import AlphabetDetector
 import requests
 import logging
 import inspect
+from tkinter import *
 
 geometry_param = "770x500"
 menu_options = ['Random mode', 'Chain mode', 'Vocabulary practise', 'Settings(In Development)']
@@ -129,3 +130,14 @@ def symbol_check(answer):
             logger.error(f'{error_counter} ) Bad entry\n')
             return False
     return True
+
+def settings(name):
+    menubar = Menu(name)
+    name.config(menu=menubar)
+    file_menu = Menu(menubar, tearoff=False)
+    menubar.add_cascade(label='Settings', menu=file_menu)
+    sub_menu = Menu(file_menu, tearoff=0)
+    sub_menu.add_command(label='960x480', command=lambda: name.geometry('960x480'))
+    sub_menu.add_command(label='1156x756', command=lambda: name.geometry('1156x756'))
+    sub_menu.add_command(label='1920x1080', command=lambda: name.geometry('1920x1080'))
+    file_menu.add_cascade(label='Screen resolution', menu=sub_menu)
