@@ -1,4 +1,5 @@
-from tkinter import *
+import tkinter as tk
+from tkinter import ttk
 from backend import geometry_param
 
 # def settings_open():
